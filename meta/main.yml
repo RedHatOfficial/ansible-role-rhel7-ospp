@@ -1,6 +1,7 @@
 galaxy_info:
   author: SCAP Security Guide development team
   description: United States Government Configuration Baseline
+  company: "Red Hat, Inc."
 
   issue_tracker_url: https://github.com/OpenSCAP/scap-security-guide/issues
 
@@ -9,22 +10,28 @@ galaxy_info:
   min_ansible_version: 2.3
 
   platforms:
-  - name: GenericBSD
+  - name: EL
     versions:
-    - any
-  - name: GenericLinux
-    versions:
-    - any
-  - name: GenericUNIX
-    versions:
-    - any
+    - 7
 
   galaxy_tags:
+  - system
   - hardening
   - openscap
   - ssg
   - scap-security-guide
   - security
   - compliance
+  - cnssi_1253
+  - nist_800-171
+  - nist_800-53
+  - usgcb
+  - ospp
+  - niap
+  - nist
+  - ncp
+  - commoncriteria
+  - redhatofficial
+  - redhat
 
 dependencies: []
