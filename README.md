@@ -1,6 +1,10 @@
 United States Government Configuration Baseline
 =========
 
+[![Build Status](https://travis-ci.org/RedHatOfficial/ansible-rhel7-ospp-role.svg?branch=master)](https://travis-ci.org/RedHatOfficial/ansible-rhel7-ospp-role)
+[![Ansible Role](https://img.shields.io/ansible/role/26066.svg)](https://galaxy.ansible.com/RedHatOfficial/rhel7-ospp-role)
+[![GitHub release](https://img.shields.io/github/release/RedHatOfficial/ansible-rhel7-ospp-role.svg)](https://github.com/RedHatOfficial/ansible-rhel7-ospp-role/releases/latest)
+
 Ansible remediation role for profile ospp  
 Profile Title:  United States Government Configuration Baseline  
 Profile Description:  
