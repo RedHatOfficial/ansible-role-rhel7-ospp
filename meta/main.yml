@@ -1,7 +1,8 @@
 galaxy_info:
+  role_name: rhel7_ospp
   author: SCAP Security Guide development team
   description: United States Government Configuration Baseline
-  company: "Red Hat, Inc."
+  company: Red Hat, Inc.
 
   issue_tracker_url: https://github.com/OpenSCAP/scap-security-guide/issues
 
