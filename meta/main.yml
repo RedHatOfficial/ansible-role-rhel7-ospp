@@ -20,12 +20,13 @@ galaxy_info:
   - hardening
   - openscap
   - ssg
-  - scap-security-guide
+  - scap
+  - complianceascode
   - security
   - compliance
-  - cnssi_1253
-  - nist_800-171
-  - nist_800-53
+  - cnssi1253
+  - nist800171
+  - nist80053
   - usgcb
   - ospp
   - niap
