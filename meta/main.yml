@@ -1,7 +1,7 @@
 galaxy_info:
   role_name: rhel7_ospp
   author: ComplianceAsCode development team
-  description: United States Government Configuration Baseline
+  description: OSPP - Protection Profile for General Purpose Operating Systems v4.2.1
   company: Red Hat, Inc.
 
   issue_tracker_url: https://github.com/ComplianceAsCode/content/issues
