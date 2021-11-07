@@ -1,5 +1,6 @@
 galaxy_info:
   role_name: rhel7_ospp
+  namespace: redhatofficial
   author: ComplianceAsCode development team
   description: OSPP - Protection Profile for General Purpose Operating Systems v4.2.1
 
