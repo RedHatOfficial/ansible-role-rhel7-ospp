@@ -9,6 +9,8 @@
   - medium_severity | bool
   - no_reboot_needed | bool
   - package_dracut_fips_installed | bool
+  - ( ansible_virtualization_type not in ["docker", "lxc", "openvz", "podman", "container"] and not ( lookup("env", "container")
+    == "bwrap-osbuild" ) )
   - ansible_virtualization_type not in ["docker", "lxc", "openvz", "podman", "container"]
   tags:
   - CCE-80358-5
@@ -70,7 +72,8 @@
   - medium_disruption | bool
   - reboot_required | bool
   - restrict_strategy | bool
-  - ansible_virtualization_type not in ["docker", "lxc", "openvz", "podman", "container"]
+  - ( ansible_virtualization_type not in ["docker", "lxc", "openvz", "podman", "container"] and not ( lookup("env", "container")
+    == "bwrap-osbuild" ) )
   - '"grub2-common" in ansible_facts.packages'
   tags:
   - CCE-80359-3
@@ -104,7 +107,8 @@
   - medium_disruption | bool
   - reboot_required | bool
   - restrict_strategy | bool
-  - ansible_virtualization_type not in ["docker", "lxc", "openvz", "podman", "container"]
+  - ( ansible_virtualization_type not in ["docker", "lxc", "openvz", "podman", "container"] and not ( lookup("env", "container")
+    == "bwrap-osbuild" ) )
   - '"grub2-common" in ansible_facts.packages'
   - prelink_exists.stat.exists
   tags:
@@ -136,7 +140,8 @@
   - medium_disruption | bool
   - reboot_required | bool
   - restrict_strategy | bool
-  - ansible_virtualization_type not in ["docker", "lxc", "openvz", "podman", "container"]
+  - ( ansible_virtualization_type not in ["docker", "lxc", "openvz", "podman", "container"] and not ( lookup("env", "container")
+    == "bwrap-osbuild" ) )
   - '"grub2-common" in ansible_facts.packages'
   - prelink_exists.stat.exists
   tags:
@@ -171,7 +176,8 @@
   - medium_disruption | bool
   - reboot_required | bool
   - restrict_strategy | bool
-  - ansible_virtualization_type not in ["docker", "lxc", "openvz", "podman", "container"]
+  - ( ansible_virtualization_type not in ["docker", "lxc", "openvz", "podman", "container"] and not ( lookup("env", "container")
+    == "bwrap-osbuild" ) )
   - '"grub2-common" in ansible_facts.packages'
   tags:
   - CCE-80359-3
@@ -204,7 +210,8 @@
   - medium_disruption | bool
   - reboot_required | bool
   - restrict_strategy | bool
-  - ansible_virtualization_type not in ["docker", "lxc", "openvz", "podman", "container"]
+  - ( ansible_virtualization_type not in ["docker", "lxc", "openvz", "podman", "container"] and not ( lookup("env", "container")
+    == "bwrap-osbuild" ) )
   - '"grub2-common" in ansible_facts.packages'
   - aesni_supported.rc == 0
   tags:
@@ -238,7 +245,8 @@
   - medium_disruption | bool
   - reboot_required | bool
   - restrict_strategy | bool
-  - ansible_virtualization_type not in ["docker", "lxc", "openvz", "podman", "container"]
+  - ( ansible_virtualization_type not in ["docker", "lxc", "openvz", "podman", "container"] and not ( lookup("env", "container")
+    == "bwrap-osbuild" ) )
   - '"grub2-common" in ansible_facts.packages'
   tags:
   - CCE-80359-3
@@ -269,7 +277,8 @@
   - medium_disruption | bool
   - reboot_required | bool
   - restrict_strategy | bool
-  - ansible_virtualization_type not in ["docker", "lxc", "openvz", "podman", "container"]
+  - ( ansible_virtualization_type not in ["docker", "lxc", "openvz", "podman", "container"] and not ( lookup("env", "container")
+    == "bwrap-osbuild" ) )
   - '"grub2-common" in ansible_facts.packages'
   tags:
   - CCE-80359-3
@@ -303,7 +312,8 @@
   - medium_disruption | bool
   - reboot_required | bool
   - restrict_strategy | bool
-  - ansible_virtualization_type not in ["docker", "lxc", "openvz", "podman", "container"]
+  - ( ansible_virtualization_type not in ["docker", "lxc", "openvz", "podman", "container"] and not ( lookup("env", "container")
+    == "bwrap-osbuild" ) )
   - '"grub2-common" in ansible_facts.packages'
   tags:
   - CCE-80359-3
@@ -337,7 +347,8 @@
   - medium_disruption | bool
   - reboot_required | bool
   - restrict_strategy | bool
-  - ansible_virtualization_type not in ["docker", "lxc", "openvz", "podman", "container"]
+  - ( ansible_virtualization_type not in ["docker", "lxc", "openvz", "podman", "container"] and not ( lookup("env", "container")
+    == "bwrap-osbuild" ) )
   - '"grub2-common" in ansible_facts.packages'
   - fipsargcheck.rc == 0
   tags:
@@ -372,7 +383,8 @@
   - medium_disruption | bool
   - reboot_required | bool
   - restrict_strategy | bool
-  - ansible_virtualization_type not in ["docker", "lxc", "openvz", "podman", "container"]
+  - ( ansible_virtualization_type not in ["docker", "lxc", "openvz", "podman", "container"] and not ( lookup("env", "container")
+    == "bwrap-osbuild" ) )
   - '"grub2-common" in ansible_facts.packages'
   - fipsargcheck.rc != 0
   tags:
@@ -406,7 +418,8 @@
   - medium_disruption | bool
   - reboot_required | bool
   - restrict_strategy | bool
-  - ansible_virtualization_type not in ["docker", "lxc", "openvz", "podman", "container"]
+  - ( ansible_virtualization_type not in ["docker", "lxc", "openvz", "podman", "container"] and not ( lookup("env", "container")
+    == "bwrap-osbuild" ) )
   - '"grub2-common" in ansible_facts.packages'
   tags:
   - CCE-80359-3
@@ -440,7 +453,8 @@
   - medium_disruption | bool
   - reboot_required | bool
   - restrict_strategy | bool
-  - ansible_virtualization_type not in ["docker", "lxc", "openvz", "podman", "container"]
+  - ( ansible_virtualization_type not in ["docker", "lxc", "openvz", "podman", "container"] and not ( lookup("env", "container")
+    == "bwrap-osbuild" ) )
   - '"grub2-common" in ansible_facts.packages'
   tags:
   - CCE-80359-3
@@ -474,7 +488,8 @@
   - medium_disruption | bool
   - reboot_required | bool
   - restrict_strategy | bool
-  - ansible_virtualization_type not in ["docker", "lxc", "openvz", "podman", "container"]
+  - ( ansible_virtualization_type not in ["docker", "lxc", "openvz", "podman", "container"] and not ( lookup("env", "container")
+    == "bwrap-osbuild" ) )
   - '"grub2-common" in ansible_facts.packages'
   - bootargcheck.rc == 0
   tags:
@@ -509,7 +524,8 @@
   - medium_disruption | bool
   - reboot_required | bool
   - restrict_strategy | bool
-  - ansible_virtualization_type not in ["docker", "lxc", "openvz", "podman", "container"]
+  - ( ansible_virtualization_type not in ["docker", "lxc", "openvz", "podman", "container"] and not ( lookup("env", "container")
+    == "bwrap-osbuild" ) )
   - '"grub2-common" in ansible_facts.packages'
   - bootargcheck.rc != 0
   tags:
@@ -541,7 +557,8 @@
   - medium_disruption | bool
   - reboot_required | bool
   - restrict_strategy | bool
-  - ansible_virtualization_type not in ["docker", "lxc", "openvz", "podman", "container"]
+  - ( ansible_virtualization_type not in ["docker", "lxc", "openvz", "podman", "container"] and not ( lookup("env", "container")
+    == "bwrap-osbuild" ) )
   - '"grub2-common" in ansible_facts.packages'
   tags:
   - CCE-80359-3
@@ -7388,7 +7405,7 @@
   lineinfile:
     create: true
     dest: /etc/modprobe.d/dccp.conf
-    regexp: dccp
+    regexp: install\s+dccp
     line: install dccp /bin/true
   when:
   - DISA_STIG_RHEL_07_020101 | bool
@@ -7450,7 +7467,7 @@
   lineinfile:
     create: true
     dest: /etc/modprobe.d/sctp.conf
-    regexp: sctp
+    regexp: install\s+sctp
     line: install sctp /bin/true
   when:
   - disable_strategy | bool
@@ -7508,7 +7525,7 @@
   lineinfile:
     create: true
     dest: /etc/modprobe.d/bluetooth.conf
-    regexp: bluetooth
+    regexp: install\s+bluetooth
     line: install bluetooth /bin/true
   when:
   - disable_strategy | bool
@@ -7822,7 +7839,7 @@
   lineinfile:
     create: true
     dest: /etc/modprobe.d/cramfs.conf
-    regexp: cramfs
+    regexp: install\s+cramfs
     line: install cramfs /bin/true
   when:
   - disable_strategy | bool
@@ -7876,7 +7893,7 @@
   lineinfile:
     create: true
     dest: /etc/modprobe.d/usb-storage.conf
-    regexp: usb-storage
+    regexp: install\s+usb-storage
     line: install usb-storage /bin/true
   when:
   - DISA_STIG_RHEL_07_020100 | bool
